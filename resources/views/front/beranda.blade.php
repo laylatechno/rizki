@@ -153,7 +153,7 @@
                         <span class="time">{!! $p->description !!}</span>
                     </div>
                     <div class="destination-footer">
-                        <span class="price"><span>Rp {{ number_format($p->price, 0, ',', '.') }}</span></span>
+                        <!-- <span class="price"><span>Rp {{ number_format($p->price, 0, ',', '.') }}</span></span> -->
                         <a target="_blank" href="https://wa.me/{{$profil->no_wa}}?text={{ urlencode('Hallo Admin ' . $profil->nama_profil . ', saya ingin bertanya terkait Armada ' . $p->name . '. Terima kasih.') }}" class="read-more">
                             Pesan Sekarang<i class="fal fa-angle-right"></i>
                         </a>
