@@ -189,7 +189,7 @@
                                                             <div class="">
                                                                 <label for="keyword"
                                                                     class="form-label fw-semibold">Keyword</label>
-                                                                <input type="text" class="form-control" name="keyword" id="keyword">{{ $profil->keyword }}</input>
+                                                                    <input type="text" class="form-control" id="keyword" name="keyword" value="{{ $profil->keyword }}" placeholder="Masukkan Keyword">
                                                             </div>
                                                         </div>
 
