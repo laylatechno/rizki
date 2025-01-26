@@ -1,6 +1,6 @@
 @extends('front.layouts.app')
 
-<div class="g-recaptcha" data-sitekey="{{ config('services.recaptcha.sitekey') }}"></div>
+<!-- <div class="g-recaptcha" data-sitekey="{{ config('services.recaptcha.sitekey') }}"></div> -->
 @section('content')
 <!-- Page Banner Start -->
 <section class="page-banner-area pt-50 pb-35 rel z-1 bgs-cover" style="background-image: url({{ asset('template/front') }}/assets/images/heroku.webp);">
