@@ -95,8 +95,8 @@
                         </div>
                         <div class="col-md-12">
                             <div class="form-group">
-                                <label for="drop_address">Alamat Jemput</label>
-                                <textarea name="drop_address" id="drop_address" class="form-control" rows="5" placeholder="Tulis Alamat Jemput Disini"></textarea>
+                                <label for="drop_address">Alamat Antar</label>
+                                <textarea name="drop_address" id="drop_address" class="form-control" rows="5" placeholder="Tulis Alamat Antar Disini"></textarea>
                                 <div class="help-block with-errors"></div>
                             </div>
                         </div>
