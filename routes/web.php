@@ -54,6 +54,11 @@ Route::middleware([HtmlMinifier::class])->group(function () {
     Route::post('/kirim_kontak', [BerandaController::class, 'storeContact'])->name('kirim_kontak');
 });
 
+// Tambahkan di dalam middleware group HtmlMinifier
+Route::get('sitemap.xml', function() {
+    return response()->file(public_path('sitemap.xml'));
+});
+
 
 Route::group(['middleware' => ['auth']], function () {
     Route::resource('blog_categories', BlogCategoryController::class);
