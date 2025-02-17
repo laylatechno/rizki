@@ -46,7 +46,11 @@ Auth::routes();
 
 
 Route::middleware([HtmlMinifier::class])->group(function () {
-    Route::get('/', [BerandaController::class, 'index'])->name('beranda');
+    // Route::get('/', [BerandaController::class, 'index'])->name('beranda');
+    Route::get('/', function () {
+        return view('welcome');
+    })->name('beranda');
+
     Route::get('/home', [HomeController::class, 'index'])->name('home');
     Route::get('/blog', [BerandaController::class, 'blog'])->name('blog');
     Route::get('/blog/{slug}', [BerandaController::class, 'blog_detail'])->name('blog.blog_detail');
@@ -55,7 +59,7 @@ Route::middleware([HtmlMinifier::class])->group(function () {
 });
 
 // Tambahkan di dalam middleware group HtmlMinifier
-Route::get('sitemap.xml', function() {
+Route::get('sitemap.xml', function () {
     return response()->file(public_path('sitemap.xml'));
 });
 

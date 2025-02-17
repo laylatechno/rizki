@@ -34,19 +34,22 @@
   <div class="bgimg w3-display-container w3-animate-opacity w3-text-white">
     <div class="w3-display-topleft w3-padding-large w3-xlarge">
       <a href="" class="text-nowrap logo-img d-block px-4 py-9 w-100">
-        <img src="/upload/profil/{{ $profil->favicon }}" width="60" alt="">
+        <!-- <img src="/upload/profil/{{ $profil->favicon }}" width="60" alt=""> -->
       </a>
     </div>
     <div class="w3-display-middle">
-      <a href="{{ route('login') }}">
-        <h1 class="w3-jumbo w3-animate-top" style="text-align: center;">Login {{ $profil->nama_profil }}</h1>
+      <a href="https://wa.me/6285320555394" target="_blank">
+        <h1 class="w3-jumbo w3-animate-top" style="text-align: center;">Sistem Sementara Dinonaktifkan</h1>
       </a>
       <hr class="w3-border-grey" style="margin:auto;width:40%">
-      <p class="w3-large w3-center">Silahkan Login Untuk Menggunakan Sistem Ini</p>
+      <p class="w3-large w3-center">Informasi Lebih Lanjut Hubungi
+        <a href="https://wa.me/6285320555394" target="_blank">WhatsApp</a>
+      </p>
     </div>
     <div class="w3-display-bottomleft w3-padding-large">
-      Powered by <a href="#" target="_blank">{{ $profil->nama_profil }}</a>
+      Powered by <a href="https://wa.me/6285320555394" target="_blank">Layla Techno</a>
     </div>
+
   </div>
 
 </body>
